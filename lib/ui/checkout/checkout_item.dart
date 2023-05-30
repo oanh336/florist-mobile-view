@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:myshop/ui/model/checkout_product.dart';
 
+import '../color/color.dart';
+
 class CheckOutItem extends StatelessWidget {
   final CheckOutProduct flower;
   const CheckOutItem({super.key, required this.flower});
@@ -18,8 +20,8 @@ class CheckOutItem extends StatelessWidget {
           boxShadow: const [
             BoxShadow(
               blurRadius: 8,
-              offset: Offset(0, 4),
-              color: Colors.grey,
+              offset: Offset(0, 3),
+              color: buttonColor,
             ),
           ]),
       child: Row(

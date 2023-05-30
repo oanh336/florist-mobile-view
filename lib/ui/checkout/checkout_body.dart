@@ -8,12 +8,13 @@ class CheckOutBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-     body: Center(
+     body: SingleChildScrollView(
     
        child: Column(
-          children: [
+          children: <Widget>[
             CheckOut(),
-            CheckOutDetail(),
+            CheckOutDetail()
+          
           ],
        ),
      )
