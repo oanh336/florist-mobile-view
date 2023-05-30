@@ -8,6 +8,7 @@ class CheckOutItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 90,
       decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: const BorderRadius.all(
@@ -25,14 +26,14 @@ class CheckOutItem extends StatelessWidget {
         children: [
           Image.asset(
             flower.images,
-            width: 100,
-            height: 100,
-            fit: BoxFit.cover,
+            width: 70,
+            height: 70,
+           
             
           ),
           Expanded(
             child: Padding(
-              padding: const EdgeInsets.only(left: 10, bottom: 30),
+              padding: const EdgeInsets.only(left: 10, bottom: 20),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -52,9 +53,11 @@ class CheckOutItem extends StatelessWidget {
                                     style: const TextStyle(
                                         color: Colors.black, fontSize: 16),
 
-                      )
+                      ),
+                      const SizedBox(width: 15),
                     ],
                   ),
+              
                   Row(
                     children: [
                       Text(
